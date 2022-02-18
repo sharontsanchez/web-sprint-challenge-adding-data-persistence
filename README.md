@@ -111,6 +111,25 @@ Build an API inside the `api` folder with endpoints for:
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. Explain the difference between Relational Databases and SQL.
+A database is a systematic collection of information, or data.
+
+A relational database is a database that stores data in a table form, containing columns and rows. It has one or more data categories in columns. Each row, or record, contains a set of data defined by the category, or column.
+A relational database typically has more than one table and they might have interrelation and this relationship will be set via the use of the foreign key.
+
+SQL, or Structured Query Language, is the standard language for dealing with Relational Databases. It’s used to perform data interacting tasks such as:
+
+Creating a table and inserting data into it.
+Querying and filtering data.
+Modifying and updating data.
+Delete data or table.
+
+RDBMS is a database management system. SQL is the language used for communicating with data in an RDBMS.
+
 2. Why do tables need a Primary Key?
+Primary keys are a central element in SQL databases. They provide a unique value that can identify a specific row in a table. Primary keys are important to give your table uniqueness and thus assist in indexing, sorting, retrieving records, solving data integrity issues.
+
 3. What is the name given to a table column that references the Primary Key on another table?
+When you create two tables that are related to each other, they are often related by a column in one table referencing the primary key of the other table - that column is called the "foreign key". They allow developers to maintain referential integrity across their database. Foreign keys also help end-users by preventing errors and improving the performance of any operation that’s pulling data from tables linked by indexed foreign keys.
+
 4. What do we need in order to have a _many to many_ relationship between two tables?
+A many-to-many relationship occurs when multiple records in a table are associated with multiple records in another table. For example, a many-to-many relationship exists between customers and products: customers can purchase various products, and products can be purchased by many customers.
